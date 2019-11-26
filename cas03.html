@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="main.css">
+    
+    
+</head>
+<body>
+    
+    <form action="skripta.php" method="POST" enctype="multipart/form-data" class="center">
+        
+        <fieldset>
+            <legend><strong>Lični podaci korisnika</strong></legend>
+                
+                <label for="iDatRod">Unesite datum rođenja: </label><br>
+                <input type="date" name="nDatRod" id="iDatRod"><br>
+
+                <label for="iDatVr">Datum i vreme sledećeg časa:</label><br>
+                <input type="datetime-local" name="nDatVr" id="iDatVr"><br>
+
+                <label for="iUrl">Unesite web stranicu:</label><br>
+                <input type="url" name="nUrl" id="iUrl"><br>
+
+                <label for="iBoja">Vaša omiljena boja:</label><br>
+                <input type="color" name="nBoja" id="iColor"><br>
+
+                <label for="iBroj">Unesite vaš omiljeni broj:</label><br>
+                <input type="number" name="nBroj" id="iBroj" min="10" max="20" step="1"><br>
+
+                <label for="iSkala">Skala</label>
+                <input type="range" name="nSkala" id="iSkala" value="80"><br>
+
+                <label for="iNick">Nickname:</label><br>
+                <input type="text" name="nNick" id="iNick" pattern="[a-zA-Z]+" required><br>
+
+                <label for="iSifra">Šifra</label><br>
+                <input type="password" name="nSifrs" id="iSifra"><br>
+
+                <label for="iSkills">HTML</label>
+                <progress id="iSkills" value="80" max="100"></progress><br>
+
+                <label for="iCss">CSS</label>
+                <meter id="iCss" value="2" min="0" max="10"></meter><br><br>
+
+                <label for="iFile">Okačite sliku</label>
+                <input type="file" name="nfile" id="iFile"><br>
+
+                <label for="iHobi">Hobi</label><br>
+                <select name="nHobi" id="iHobi">
+                    <option value="----">-------</option>
+                    <optgroup label="Sport">
+                        <option value="rukomet">Rukomet</option>
+                        <option value="odbojka">Odbojka</option>
+                        <option value="kosarka">Kosarka</option>
+                    </optgroup>
+                    <optgroup label="Muzika">
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                        <option value="folk">Folk</option>
+                    </optgroup>
+                </select><br>
+
+                <label for="iFax">Fakultet</label><br>
+                <input type="text" name="nFax" id="iFax" list="lFax">
+                <datalist id="lFax">
+                <option value="FON">Fakultet Organizacionih Nauka</option>
+                <option value="PMF">Prirodno Matematički Fakultet</option>
+                <option value="ETF">Elektro-Tehnički Fakultet</option>
+                </datalist><br>
+                
+
+
+                <hr>
+                <div class="dugme">
+                <input type="submit" value="Pošalji">
+                <input type="reset" name="Ponisti">
+                </div>
+           
+        </fieldset>
+        
+
+    </form>
+
+</body>
+</html>
